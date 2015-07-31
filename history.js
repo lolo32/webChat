@@ -1,0 +1,1 @@
+{"file:///C:/Users/Laurent/Downloads/webChat/webChat/test.html":{"clients":[],"msg":[{"date":1437778096404,"name":"nom","msg":"truc"},{"date":1437778114283,"name":"chose","msg":"machin"},{"date":1437778123650,"name":"nom","msg":"autre"},{"date":1437780048587,"name":":)","msg":":)"},{"date":1437780469500,"name":"dsfsdf","msg":"ujyrdu"}]}}
