@@ -30,10 +30,14 @@ io.on('connection', function (socket) {
     });
 
     socket.on('disconnect', function () {
-        console.log('Disconnection: ' + debug(clients[session]));
-        var indexSocket = clients[session].clients.indexOf(socket.id);
-        if (-1 !== indexSocket) {
-            clients[session].clients.splice(indexSocket, 1);
+        try {
+            console.log('Disconnection: ' + debug(clients[session]));
+            var indexSocket = clients[session].clients.indexOf(socket.id);
+            if (-1 !== indexSocket) {
+                clients[session].clients.splice(indexSocket, 1);
+            }
+        } catch (e) {
+            e.printStackTrace();
         }
     });
 
